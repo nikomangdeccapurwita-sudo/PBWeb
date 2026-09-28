@@ -1,0 +1,651 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+    background-color: #080808;
+    color: #eeeeee;
+
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+
+    max-width: 1150px;
+    margin: auto;
+
+    padding: 0 35px;
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+header {
+    min-height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 60px;
+    margin: 30px 0;
+
+    background: linear-gradient(
+        120deg,
+        #080808,
+        #2b080b
+    );
+
+    border-left: 5px solid #b5101b;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+
+header h1 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 65px;
+    line-height: 1;
+
+    color: #ffffff;
+
+    margin-bottom: 15px;
+
+    letter-spacing: 2px;
+}
+
+
+header p {
+    color: #c31622;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================================
+   NAVIGATION
+   ========================================= */
+
+nav {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    padding: 15px;
+    margin-bottom: 20px;
+
+    background-color: #111111;
+
+    border: 1px solid #292929;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+nav a {
+    color: #cccccc;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    padding: 8px 15px;
+
+    border-bottom: 2px solid transparent;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover {
+    color: #ffffff;
+
+    border-bottom-color: #b5101b;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================
+   GARIS PEMISAH
+   ========================================= */
+
+hr {
+    border: none;
+
+    border-top: 1px solid #3b1115;
+
+    margin: 45px 0;
+}
+
+
+/* =========================================
+   ABOUT ME
+   ========================================= */
+
+.about-me {
+    display: grid;
+
+    grid-template-columns: 32% 68%;
+
+    gap: 45px;
+
+    padding: 55px 40px;
+
+    background-color: #0d0d0d;
+
+    border-top: 2px solid #b5101b;
+
+    border-bottom: 1px solid #292929;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================================
+   JUDUL ABOUT ME
+   ========================================= */
+
+.about-title {
+    border-right: 1px solid #3a3a3a;
+
+    padding-right: 30px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.about-title p {
+    color: #b5101b;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 12px;
+}
+
+
+.about-title h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 58px;
+
+    line-height: 1;
+
+    color: #ffffff;
+
+    margin: 0;
+}
+
+
+.about-title h2 span {
+    color: #b5101b;
+}
+
+
+/* =========================================
+   ISI ABOUT ME
+   ========================================= */
+
+.about-content {
+    padding: 5px 10px;
+}
+
+
+.about-content p {
+    color: #d0d0d0;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
+
+    text-align: left;
+}
+
+
+.about-content b {
+    color: #ffffff;
+
+    font-weight: bold;
+}
+
+
+.about-content i {
+    color: #bdbdbd;
+}
+
+
+.about-content u {
+    color: #d21b27;
+
+    text-decoration-color: #d21b27;
+}
+
+
+/* Kalimat terakhir */
+
+.about-highlight {
+    color: #ffffff !important;
+
+    font-weight: bold;
+
+    padding-left: 15px;
+
+    border-left: 3px solid #b5101b;
+}
+
+
+/* =========================================
+   HOBBY SECTION
+   ========================================= */
+
+.hobby-section {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 25px;
+
+    margin-top: 30px;
+}
+
+
+/* =========================================
+   CARD
+   ========================================= */
+
+.card {
+    padding: 35px;
+
+    background-color: #111111;
+
+    border: 1px solid #292929;
+
+    border-top: 3px solid #b5101b;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.35);
+
+    transition: 0.3s;
+}
+
+
+/* Hover card */
+
+.card:hover {
+    transform: translateY(-7px);
+
+    border-color: #b5101b;
+
+    box-shadow:
+        0 15px 30px rgba(181, 16, 27, 0.18);
+}
+
+
+/* Judul card */
+
+.card h3 {
+    color: #c31622;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+/* List */
+
+.card ol {
+    padding-left: 25px;
+}
+
+
+.card li {
+    color: #d0d0d0;
+
+    padding: 6px 0;
+
+    transition: 0.3s;
+}
+
+
+/* Hover pada isi list */
+
+.card li:hover {
+    color: #ffffff;
+
+    transform: translateX(6px);
+}
+
+
+/* =========================================
+   JUDUL BAGIAN LAIN
+   ========================================= */
+
+body > h2 {
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 40px;
+
+    color: #ffffff;
+
+    padding-left: 20px;
+
+    border-left: 5px solid #b5101b;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================
+   GOALS / TABLE
+   ========================================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    background-color: #111111;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+th {
+    padding: 16px;
+
+    text-align: left;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        90deg,
+        #791019,
+        #b5101b
+    );
+}
+
+
+td {
+    padding: 15px;
+
+    color: #cccccc;
+
+    border: 1px solid #303030;
+
+    transition: 0.3s;
+}
+
+
+tr:hover td {
+    background-color: #21090c;
+
+    color: #ffffff;
+}
+
+
+/* =========================================
+   FOTO
+   ========================================= */
+
+img {
+    display: block;
+
+    width: 250px;
+    height: auto;
+
+    margin: 25px auto;
+
+    border: 3px solid #95121c;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.6);
+
+    transition: 0.4s;
+}
+
+
+img:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+        0 15px 40px rgba(169, 15, 25, 0.35);
+}
+
+
+/* =========================================
+   MEDIA SOSIAL
+   ========================================= */
+
+body > ul {
+    background-color: #111111;
+
+    padding: 20px 40px;
+
+    border-left: 3px solid #b5101b;
+}
+
+
+body > ul li {
+    margin: 8px 0;
+}
+
+
+a {
+    color: #d21b27;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+a:hover {
+    color: #ffffff;
+
+    transform: translateX(5px);
+}
+
+
+/* =========================================
+   CONTACT / FORM
+   ========================================= */
+
+form {
+    background-color: #111111;
+
+    padding: 30px;
+
+    border-top: 3px solid #b5101b;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+
+label {
+    color: #c31622;
+
+    font-weight: bold;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 12px;
+
+    background-color: #080808;
+
+    color: #eeeeee;
+
+    border: 1px solid #3a3a3a;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+
+input:focus {
+    outline: none;
+
+    border-color: #b5101b;
+
+    box-shadow:
+        0 0 10px rgba(181, 16, 27, 0.25);
+}
+
+
+/* =========================================
+   FOOTER
+   ========================================= */
+
+footer {
+    margin-top: 45px;
+
+    padding: 30px;
+
+    text-align: center;
+
+    background-color: #050505;
+
+    border-top: 1px solid #361014;
+}
+
+
+footer p {
+    color: #777777;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+   ========================================= */
+
+@media (max-width: 750px) {
+
+    body {
+        padding: 0 18px;
+    }
+
+
+    /* Header */
+
+    header {
+        padding: 45px 30px;
+
+        min-height: 300px;
+    }
+
+
+    header h1 {
+        font-size: 48px;
+    }
+
+
+    /* Navigation */
+
+    nav {
+        flex-direction: column;
+
+        align-items: stretch;
+    }
+
+
+    nav a {
+        text-align: center;
+    }
+
+
+    /* About */
+
+    .about-me {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+
+        padding: 40px 25px;
+    }
+
+
+    .about-title {
+        border-right: none;
+
+        border-bottom: 1px solid #3a3a3a;
+
+        padding-right: 0;
+
+        padding-bottom: 25px;
+    }
+
+
+    .about-title h2 {
+        font-size: 45px;
+    }
+
+
+    /* Hobby */
+
+    .hobby-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Judul */
+
+    body > h2 {
+        font-size: 32px;
+    }
+
+
+    /* Foto */
+
+    img {
+        width: 80%;
+    }
+
+}
