@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 - JavaScript</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="profile-header">
+        <img src="Foto diri.png" alt="Foto Deca" class="avatar">
+        <div>
+            <p class="eyebrow">TUGAS 4 - JAVASCRIPT</p>
+            <h1>Formulir Pilihan</h1>
+            <p>Nama: <strong>Ni Komang Deca Purwita</strong> | NIM: <strong>255314161</strong></p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- INPUT NAMA DAN JUMLAH PILIHAN -->
+        <section class="card">
+            <h2>1. Data Awal</h2>
+            <p>Masukkan nama dan jumlah pilihan.</p>
+
+            <form id="basicForm">
+                <label for="nameInput">Nama</label>
+                <input type="text" id="nameInput"
+                       placeholder="Masukkan nama lengkap" required>
+
+                <label for="countInput">Jumlah Pilihan</label>
+                <input type="number" id="countInput"
+                       min="1" max="20" step="1" value="5" required>
+
+                <p class="hint">
+                    Masukkan angka bulat dari 1 sampai 20.
+                </p>
+
+                <button type="submit">OK, Buat Pilihan</button>
+                <p id="basicError" class="error"></p>
+            </form>
+        </section>
+
+        <!-- INPUT TEKS PILIHAN -->
+        <section id="choiceSection" class="card hidden">
+            <h2>2. Teks Pilihan</h2>
+            <p>Masukkan teks untuk setiap pilihan.</p>
+
+            <form id="choicesForm">
+                <div id="choiceInputs"></div>
+
+                <button type="submit">Simpan Teks Pilihan</button>
+                <p id="choicesError" class="error"></p>
+            </form>
+        </section>
+
+        <!-- RADIO, DROPDOWN, CHECKBOX, DAN EMAIL -->
+        <section id="selectionSection" class="card hidden">
+            <h2>3. Pilih Opsi</h2>
+
+            <form id="selectionForm">
+
+                <fieldset>
+                    <legend>Radio Button (pilih satu)</legend>
+                    <div id="radioOptions"></div>
+                </fieldset>
+
+                <label for="dropdownChoice">Drop-down</label>
+                <select id="dropdownChoice" required></select>
+
+                <fieldset>
+                    <legend>Checkbox (boleh lebih dari satu)</legend>
+                    <div id="checkboxOptions"></div>
+                </fieldset>
+
+                <label for="emailInput">Email</label>
+                <input type="email" id="emailInput"
+                       placeholder="nama@domain.com" required>
+
+                <p class="hint">
+                    Email akan diperiksa menggunakan pattern matching.
+                </p>
+
+                <button type="submit">OK, Tampilkan Hasil</button>
+                <p id="selectionError" class="error"></p>
+
+            </form>
+        </section>
+
+        <!-- OUTPUT DOM -->
+        <section id="resultSection" class="card hidden">
+            <h2>4. Hasil Pilihan</h2>
+
+            <p id="resultText"></p>
+
+            <div class="result-details">
+                <p>
+                    <strong>Pilihan Drop-down:</strong>
+                    <span id="resultDropdown"></span>
+                </p>
+
+                <p>
+                    <strong>Pilihan Radio:</strong>
+                    <span id="resultRadio"></span>
+                </p>
+
+                <p>
+                    <strong>Pilihan Checkbox:</strong>
+                    <span id="resultCheckbox"></span>
+                </p>
+            </div>
+
+            <button type="button" id="resetButton">
+                Mulai Lagi
+            </button>
+        </section>
+
+        <footer>
+            Tugas 4 JavaScript - HTML, CSS, dan DOM
+        </footer>
+
+    </main>
+
+</body>
+</html>
